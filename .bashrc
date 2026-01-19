@@ -8,4 +8,4 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
-alias dotfiles='/usr/bin/git --git-dir=/home/dt/dotfiles/ --work-tree=/home/dt'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME/'

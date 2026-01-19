@@ -1,3 +1,7 @@
+environment {
+    QT_QPA_PLATFORMTHEME "qt6ct" 
+}
+
 input {
     keyboard {
         xkb {
@@ -79,7 +83,7 @@ binds {
     // Apps
     Mod+T     { spawn "kitty"; }
     Mod+W     { spawn "zen-browser"; }
-    Mod+E     { spawn "thunar"; }
+    Mod+E     { spawn "nautilus"; }
     Mod+Space { spawn "anyrun"; }
 
     // Screenshots

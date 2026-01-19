@@ -19,6 +19,10 @@ keymap("n", "N", "Nzzzv")
 -- Keep paste info on pasting over selection
 keymap("x", "<leader>p", '"_dP')
 
+-- Delete to the void
+keymap("n", "<leader>d", '"_d')
+keymap("v", "<leader>d", '"_d')
+
 -- idk
 keymap("n", "Q", "<nop>")
 
@@ -37,13 +41,13 @@ keymap("t", "<esc>", "<C-\\><C-n>")
 keymap("n", [[<C-\>]], "<cmd>ToggleTerm direction=float<CR>")
 
 -- Comments
-keymap("n", "<C-_>", "<Plug>(comment_toggle_linewise_current)")
-keymap("v", "<C-_>", "<Plug>(comment_toggle_linewise_visual)")
+keymap("n", "<C-[>", "<Plug>(comment_toggle_linewise_current)")
+keymap("v", "<C-[>", "<Plug>(comment_toggle_linewise_visual)")
 keymap("n", "<C-b>", "<Plug>(comment_toggle_blockwise_current)")
 keymap("v", "<C-b>", "<Plug>(comment_toggle_blockwise_visual)")
 
 -- Header/Source switch
-keymap("n", "F", "<cmd>FSHere<CR>")
+keymap("n", "T", "<cmd>FSHere<CR>")
 
 -- Lsp config
 keymap("n", "L", function()
